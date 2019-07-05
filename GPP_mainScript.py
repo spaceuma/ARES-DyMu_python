@@ -1,37 +1,40 @@
 # -*- coding: utf-8 -*-
 
 #======================GLOBAL PATH PLANNING SCRIPT=============================
-#           Case Example where Global Path Planning is used
+#     Case Example where Global Path Planning is used on two cost maps
 #          Author: J. Ricardo Sanchez Ibanez (ricardosan@uma.es)
 #==============================================================================
 
 import numpy as np
 import matplotlib.pyplot as plt
-import costmap_creation.exoter as exoter
-import FastMarching.FastMarching as FM
+import lib.exoter as exoter
+import lib.dymu as dymu
 from time import time
 
-elevationMap = np.loadtxt(open("DECOS_maps/DECOS_elevationMap.csv", "rb"),\
+# The DEM (elevationMap) and soilMap are read
+elevationMap = np.loadtxt(open("maps/DECOS_elevationMap.csv", "rb"),\
                           delimiter=" ", skiprows=0)
 
-soilMap = np.loadtxt(open("DECOS_maps/DECOS_soilMap.csv", "rb"),\
+soilMap = np.loadtxt(open("maps/DECOS_soilMap.csv", "rb"),\
                           delimiter=" ", skiprows=0)
 
-costMap1, locomotionMap = exoter.getCostMap(elevationMap, soilMap)
+# Getting CostMaps with and without Wheel-walking mode
+costMap1, obstacleMap = exoter.getCostMap(elevationMap, soilMap)
+costMap2, obstacleMap = exoter.getCostMapWOWW(elevationMap, soilMap)
 
-costMap2, locomotionMap = exoter.getCostMapWOWW(elevationMap, soilMap)
-
+# We set the goal
 goal = [87,59]
 
-start = [(60,110), (39,99), (90,96), (57,56), (110,56)];
-
+# Total Cost Maps are computed
 init = time()
-Tmap1 = FM.computeTmap(costMap1,goal,[])
-print('Elapsed time of computing time map 1: '+str(time()-init))
+Tmap1 = dymu.computeTmap(costMap1, obstacleMap, goal, [])
+print('Elapsed time of computing Total Cost Map 1: ' + str(time()-init))
 init = time()
-Tmap2 = FM.computeTmap(costMap2,goal,[])
-print('Elapsed time of computing time map 2: '+str(time()-init))
+Tmap2 = dymu.computeTmap(costMap2, obstacleMap, goal, [])
+print('Elapsed time of computing Total Cost Map 2: ' + str(time()-init))
 
+
+start = [(60,110), (39,99), (90,96), (57,56), (110,56)]
 
 
 fig1, (ax1, ax2) = plt.subplots(1, 2, tight_layout=True)
@@ -50,7 +53,7 @@ ax3.contour(Tmap1, 100, cmap = 'viridis')
 ax3.plot(goal[0],goal[1],'or')
 for i,s in enumerate(start):
     ax3.plot(start[i][0],start[i][1],'or')
-    path = FM.getPathGDM(Tmap1,np.asarray(start[i]),np.asarray(goal),0.5)
+    path = dymu.getPathGDM(Tmap1,np.asarray(start[i]),np.asarray(goal),0.5)
     ax3.plot(path[:,0],path[:,1],'r')
 ax3.set_aspect('equal')
 ax4.contourf(Tmap2, 100, cmap = 'viridis', alpha = .5)
@@ -58,7 +61,7 @@ ax4.contour(Tmap2, 100, cmap = 'viridis')
 ax4.plot(goal[0],goal[1],'or')
 for i,s in enumerate(start):
     ax4.plot(start[i][0],start[i][1],'or')
-    path = FM.getPathGDM(Tmap2,np.asarray(start[i]),np.asarray(goal),0.5)
+    path = dymu.getPathGDM(Tmap2,np.asarray(start[i]),np.asarray(goal),0.5)
     ax4.plot(path[:,0],path[:,1],'r')
 ax4.set_aspect('equal')
 plt.show()

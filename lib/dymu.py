@@ -104,9 +104,9 @@ def getMinNB(nbT,nbNodes):
 # =============================================================================
 #    Compute values of T of neighbouring nodes
 # =============================================================================
-def computeTmap(costMap,goal,start):
+def computeTmap(costMap,obstacleMap,goal,start):
     closedMap = np.zeros_like(costMap)
-    closedMap[np.where(costMap == np.inf)] = 1
+    closedMap[np.where(obstacleMap == 1)] = 1
     Tmap = np.ones_like(costMap)*np.inf
     nbT = []
     nbNodes = []
