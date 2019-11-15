@@ -11,6 +11,13 @@
 
 *Affiliation:* University of Malaga, [Space Robotics Lab](https://www.uma.es/robotics-and-mechatronics/info/107542/robotica-espacial/)
 
+## Versions
+
+[![pythonlogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/PythonLogo.jpg)](https://github.com/esa-prl/planning-path_planning)
+[![rocklogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/RockLogoLib.png)](https://github.com/esa-prl/planning-path_planning)
+[![cpluslogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/CPlusPlusLogo.png)](https://github.com/esa-prl/planning-path_planning)
+[![matlablogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/MatlabLogo.jpg)](https://github.com/esa-prl/planning-path_planning)
+
 ## Publications
 
 If you use this repository, please reference this paper:
