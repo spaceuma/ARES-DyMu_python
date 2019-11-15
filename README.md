@@ -11,7 +11,7 @@
 
 [![pythonlogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/PythonLogo.jpg)](https://github.com/spaceuma/ARES-DyMu_python)
 [![rocklogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/RockLogoLib.png)](https://github.com/esa-prl/planning-path_planning)
-[![cpluslogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/CPlusPlusLogo.png)](https://github.com/esa-prl/planning-path_planning)
+[![cpluslogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/CPlusPlusLogo.png)](https://github.com/esa-prl/planning-path_planning/tree/standalone_ver)
 [![matlablogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/MatlabLogo.jpg)](https://github.com/spaceuma/ARES-DyMu_matlab)
   
 ## Reference
