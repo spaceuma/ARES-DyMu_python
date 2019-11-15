@@ -13,26 +13,32 @@
 
 ## Versions
 
-[![pythonlogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/PythonLogo.jpg)](https://github.com/esa-prl/planning-path_planning)
+[![pythonlogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/PythonLogo.jpg)](https://github.com/spaceuma/ARES-DyMu_python)
 [![rocklogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/RockLogoLib.png)](https://github.com/esa-prl/planning-path_planning)
 [![cpluslogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/CPlusPlusLogo.png)](https://github.com/esa-prl/planning-path_planning)
-[![matlablogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/MatlabLogo.jpg)](https://github.com/esa-prl/planning-path_planning)
+[![matlablogo](https://github.com/spaceuma/ARES-DyMu_python/blob/master/docs/media/MatlabLogo.jpg)](https://github.com/spaceuma/ARES-DyMu_matlab)
+  
+## Reference
 
-## Publications
-
-If you use this repository, please reference this paper:
+In case you use this repository, please cite the following publication:
 
 Sánchez Ibáñez, J. Ricardo, Pérez del Pulgar, Carlos J., Azkarate, M., Gerdes, L., García Cerezo, Alfonso. **Dynamic Path Planning for Reconfigurable Rovers using a Multi-layered Grid**. *Engineering Applications of Artificial Intelligence*, 2019. DOI: [10.1016/j.engappai.2019.08.011](https://doi.org/10.1016/j.engappai.2019.08.011)
 
+```
+@article{sanchez2019dynamic,
+  title={Dynamic path planning for reconfigurable rovers using a multi-layered grid},
+  author={S{\'a}nchez-Ib{\'a}nez, J Ricardo and P{\'e}rez-del-Pulgar, Carlos J and Azkarate, Martin and Gerdes, Levin and Garc{\'\i}a-Cerezo, Alfonso},
+  journal={Engineering Applications of Artificial Intelligence},
+  volume={86},
+  pages={32--42},
+  year={2019},
+  publisher={Elsevier},
+  doi={10.1016/j.engappai.2019.08.011}
+}
+```
 
-## Implementations in other languages
+## Media
 
-### C++ Implementation aimed at real experimental rovers
+[Real Experimental Rover using DyMu](https://youtu.be/X4mihNTEVGw)
 
-A C++ library containing this path planning algorithm can be found on the [ESA-PRL GitHub organization](https://github.com/esa-prl/planning-path_planning). It is used together with a [Rock Orogen Component](https://github.com/esa-prl/planning-orogen-path_planning) inside the navigation system of experimental rovers (see video below).
 
-**Video:** [Real Experimental Rover using DyMu](https://youtu.be/X4mihNTEVGw)
-
-### MATLAB Implementation
-
-A Matlab version of this algorithm can be found [here](https://github.com/spaceuma/ARES-DyMu_matlab)
