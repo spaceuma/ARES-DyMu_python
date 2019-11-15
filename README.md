@@ -1,7 +1,7 @@
 <img src="docs/media/DyMuLogo.png" align="right" />
 
 # ARES-DyMu_python
-Python implementation of the Dynamic Multi-layered (DyMu) Path Planner
+>Python implementation of the Dynamic Multi-layered (DyMu) Path Planner
 
 *Author:* [J. Ricardo Sánchez Ibáñez](https://github.com/JRicardoSan) [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-5130-3808)
 
