@@ -1,15 +1,11 @@
 <img src="docs/media/DyMuLogo.png" align="right" />
 
-# ARES-DyMu_python
->Python implementation of the Dynamic Multi-layered (DyMu) Path Planner
+# DyMu
+>DyMu (Dynamic Multi-layered) Path Planner results from the ARES (Autonomous Routing on Extreme Surfaces) collaboration activity between the [University of Malaga](https://www.uma.es/robotics-and-mechatronics/info/107542/robotica-espacial/) and the [European Space Agency](https://www.esa.int/Enabling_Support/Space_Engineering_Technology/Planetary_Robotics_Laboratory) under contract 4000118072/16/NL/LvH/gp.
 
-*Author:* [J. Ricardo Sánchez Ibáñez](https://github.com/JRicardoSan) [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-5130-3808)
+*Author:* [J. Ricardo Sánchez Ibáñez](https://github.com/JRicardoSan) [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-5130-3808) (ricardosan@uma.es)
 
-*Supervisor:* [Carlos J. Pérez del Pulgar](https://github.com/carlibiri) [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-5819-8310)
-
-*Contact info:* ricardosan@uma.es
-
-*Affiliation:* University of Malaga, [Space Robotics Lab](https://www.uma.es/robotics-and-mechatronics/info/107542/robotica-espacial/)
+*Supervisors:* [Carlos J. Pérez del Pulgar](https://github.com/carlibiri) [![orcid](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0001-5819-8310) (carlosperez@uma.es), [Martin Azkarate](https://github.com/martinazkarate)(martin.azkarate@esa.int)
 
 ## Versions
 
