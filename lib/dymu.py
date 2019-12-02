@@ -78,12 +78,9 @@ def updateNode(nodeTarget, costMap, Tmap, nbT, nbNodes, closedMap):
                 if T < Tmap[nodeChild[1],nodeChild[0]]:
                     tempT = Tmap[nodeChild[1],nodeChild[0]]
                     nIndex = bisect.bisect_left(nbT,tempT)
-                    try:
-                        nIndex = next(x for x,n in \
+                    nIndex = next(x for x,n in \
                                   enumerate(nbNodes[nIndex:],nIndex) if \
                                   np.array_equal(nodeChild,nbNodes[x]))
-                    except:
-                        print('laecagaao')
                     del nbT[nIndex]
                     del nbNodes[nIndex]
                     nIndex = bisect.bisect_left(nbT,T)
